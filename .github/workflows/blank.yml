@@ -35,3 +35,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           exit -1
+      - name: Another step
+        run: |
+          echo this is another job
+          ifconfig
