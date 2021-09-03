@@ -39,3 +39,10 @@ jobs:
         run: |
           echo this is another job
           ifconfig
+  laugh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Laugh Laugh and Laugh 😲 笑一笑，十年没
+      run: echo 😲😲😲laugh!
