@@ -31,13 +31,16 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
+        id: bb
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
           echo $GITHUB_OUTPUT
       - name: Another step
+        id: cc
         run: |
           echo this is another job
+          echo ${{ steps.bb }}
           ifconfig
   laugh:
     runs-on: ubuntu-latest
