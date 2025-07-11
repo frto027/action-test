@@ -35,7 +35,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          echo 'got=0' > $GITHUB_OUTPUT
+          echo 'got=false' > $GITHUB_OUTPUT
       - name: Another step
         id: cc
         run: |
