@@ -39,8 +39,7 @@ jobs:
       - name: Another step
         id: cc
         run: |
-          echo this is another job
-          echo ${{ steps.bb }}
+          echo ${{ steps.bb.outputs }}
           ifconfig
   laugh:
     runs-on: ubuntu-latest
