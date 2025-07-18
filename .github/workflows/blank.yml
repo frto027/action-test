@@ -46,5 +46,5 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
-      - name: Laugh Laugh and Laugh 😲 笑一笑，十年没
-        run: echo 😲😲😲laugh!
+      - name: Good
+        run: echo "::warning file=Readme.md,line=1,title=aa::bb"
